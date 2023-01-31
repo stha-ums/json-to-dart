@@ -20,11 +20,10 @@ class LocalizationManagerBloc
     on<InitializeLocale>((event, emit) {
       _logger.info("InitializeLocale");
 
-      emit(LocalizationManagerState(
-          locale: getSavedThemeMode(), initialized: true));
+      emit(LocalizationManagerState(locale: getSavedThemeMode()));
     });
     on<ChangeLocale>((event, emit) async {
-      emit(LocalizationManagerState(locale: event.locale, initialized: true));
+      emit(LocalizationManagerState(locale: event.locale));
       _logger.info("ChangeLocale");
       await setLocale(event.locale);
     });

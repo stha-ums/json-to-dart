@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "narad" "\0"
+            VALUE "FileDescription", "json_to_dart" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "narad" "\0"
+            VALUE "InternalName", "json_to_dart" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2022 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "narad.exe" "\0"
-            VALUE "ProductName", "narad" "\0"
+            VALUE "OriginalFilename", "json_to_dart.exe" "\0"
+            VALUE "ProductName", "json_to_dart" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

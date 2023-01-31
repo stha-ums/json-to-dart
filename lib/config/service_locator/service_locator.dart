@@ -1,6 +1,6 @@
 import 'package:get_it/get_it.dart';
-import 'package:narad/core/localization_manager/bloc/localization_manager_bloc.dart';
-import 'package:narad/core/theme/bloc/theme_manager_bloc.dart';
+import 'package:json_to_dart/core/localization_manager/bloc/localization_manager_bloc.dart';
+import 'package:json_to_dart/core/theme/bloc/theme_manager_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 final sl = GetIt.instance;

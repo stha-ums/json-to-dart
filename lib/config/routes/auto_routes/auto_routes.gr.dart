@@ -10,6 +10,7 @@
 //
 // ignore_for_file: type=lint
 
+// ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:auto_route/auto_route.dart' as _i2;
 import 'package:flutter/material.dart' as _i3;
 
@@ -23,19 +24,29 @@ class AppRouter extends _i2.RootStackRouter {
   final Map<String, _i2.PageFactory> pagesMap = {
     DashBoardRoute.name: (routeData) {
       return _i2.MaterialPageX<dynamic>(
-          routeData: routeData, child: const _i1.DashBoard());
+        routeData: routeData,
+        child: const _i1.DashBoard(),
+      );
     }
   };
 
   @override
-  List<_i2.RouteConfig> get routes =>
-      [_i2.RouteConfig(DashBoardRoute.name, path: '/')];
+  List<_i2.RouteConfig> get routes => [
+        _i2.RouteConfig(
+          DashBoardRoute.name,
+          path: '/',
+        )
+      ];
 }
 
 /// generated route for
 /// [_i1.DashBoard]
 class DashBoardRoute extends _i2.PageRouteInfo<void> {
-  const DashBoardRoute() : super(DashBoardRoute.name, path: '/');
+  const DashBoardRoute()
+      : super(
+          DashBoardRoute.name,
+          path: '/',
+        );
 
   static const String name = 'DashBoardRoute';
 }

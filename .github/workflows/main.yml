@@ -1,0 +1,31 @@
+name: Flutter Web
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    name: Build Web
+    env:
+      my_secret: ${{secrets.commit_secret}}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: subosito/flutter-action@v1
+        with:
+          channel: 'stable'
+      - run: flutter config --enable-web
+      - run: flutter pub get
+      - run: flutter build web --release --base-href "/json-dart/"
+      - run: |
+          git clone https://${{secrets.commit_secret}}@github.com/stha-ums/stha-ums.github.io.git
+          rm -rf stha-ums.github.io/json-dart
+          mkdir stha-ums.github.io/json-dart
+          cp -r build/web/* stha-ums.github.io/json-dart/
+          cd stha-ums.github.io
+          git config --global user.email stha.ums@gmail.com
+          git config --global user.name Umesh Shrestha
+          git add --all
+          git branch -M main
+          git commit -m "update json new"
+          git push origin main -f

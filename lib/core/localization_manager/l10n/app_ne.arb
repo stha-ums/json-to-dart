@@ -1,4 +1,13 @@
 {
-    "helloWorld": "नमस्कार hello!",
-    "changeLanguage": "भासा परिवर्तन हर्नुहोस्!"
+    "changeLanguage": "भासा परिवर्तन हर्नुहोस्!",
+    "useFreezed": "फ्रिज्ड प्रयोग गर्नुहोस्",
+    "makeFieldsAllOptional": "क्षेत्रहरूलाई सबै ऐच्छिक बनाउनुहोस्",
+    "addTrallingUnderscore": "ट्रेलिङ्ग अन्डरस्कोर थप्नुहोस्",
+    "mutable": "परिवर्तनीय",
+    "makeFieldsAllNullable": "क्षेत्रहरूलाई सबै शून्य बनाउनुहोस्",
+    "useEquatable": "समानता प्रयोग गर्नुहोस्",
+    "addCopyWithMethod": "CopyWith विधि थप्नुहोस्",
+    "copyCode": "कोड प्रतिलिपि गर्नुहोस्",
+    "baseClassName": "आधार वर्गको नाम",
+    "codeCopied": "कोड प्रतिलिपि गरियो"
 }

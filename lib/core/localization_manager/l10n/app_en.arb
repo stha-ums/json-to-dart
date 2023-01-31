@@ -1,8 +1,14 @@
 
 {
-  "helloWorld": "Hello World!",
   "changeLanguage": "Change Language",
-  "@helloWorld": {
-    "description": "The conventional newborn programmer greeting"
-  }
+  "useFreezed": "Use Freezed",
+  "makeFieldsAllOptional": "Make Fields All Optional",
+  "addTrallingUnderscore": "Add Trailing Underscore",
+  "mutable": "Mutable",
+  "makeFieldsAllNullable": "Make Fields All Nullable",
+  "useEquatable": "Use Equatable",
+  "addCopyWithMethod": "Add CopyWith method",
+  "copyCode": "Copy code",
+  "baseClassName": "Base Class Name",
+  "codeCopied": "Code Copied"
 }

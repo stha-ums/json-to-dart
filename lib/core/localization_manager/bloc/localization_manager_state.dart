@@ -2,8 +2,7 @@ part of 'localization_manager_bloc.dart';
 
 class LocalizationManagerState extends Equatable {
   final Locale? locale;
-  final bool initialized;
-  const LocalizationManagerState({this.locale, this.initialized = false});
+  const LocalizationManagerState({this.locale});
   @override
   List<Object?> get props => [locale];
 }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:narad/config/constants/colors/colors.dart';
+import 'package:json_to_dart/config/constants/colors/colors.dart';
 
 class LightTheme {
   ThemeData call() {

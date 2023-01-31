@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
-project(narad LANGUAGES CXX)
+project(json_to_dart LANGUAGES CXX)
 
-set(BINARY_NAME "narad")
+set(BINARY_NAME "json_to_dart")
 
 cmake_policy(SET CMP0063 NEW)
 

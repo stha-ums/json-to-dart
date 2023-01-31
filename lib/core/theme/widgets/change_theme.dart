@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:narad/core/utils/string_extenstions.dart';
+import 'package:json_to_dart/core/utils/string_extenstions.dart';
 
 import '../bloc/theme_manager_bloc.dart';
 
@@ -35,7 +35,7 @@ class ChangeThemeTristateSwitch extends StatelessWidget {
                               ? Theme.of(context).primaryColor
                               : Colors.transparent,
                           child: Text(
-                            describeEnum(e).capitalize(),
+                            describeEnum(e).capitalizeInitialLetter(),
                             style: const TextStyle(color: Colors.white),
                           ),
                         ),
